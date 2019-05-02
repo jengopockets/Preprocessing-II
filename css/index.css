@@ -13,6 +13,29 @@
   padding: 1rem;
   border-radius: 12px;
 }
+@keyframes slide {
+  0% {
+    margin-right: -300px;
+  }
+  5% {
+    margin-right: -200px;
+  }
+  33% {
+    margin-right: -200px;
+  }
+  38% {
+    margin-right: -100px;
+  }
+  66% {
+    margin-right: -100px;
+  }
+  71% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -328,9 +351,49 @@ img {
 @media (max-width: 500px) {
   .home .content-pick {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .slider {
+    height: 50px;
+    padding-left: 15px;
+    overflow: hidden;
+  }
+  .home .content-pick .slider div {
+    color: #fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .home .content-pick .slider div .slide1 {
+    animation: slide 5s linear infinite;
+  }
+}
+@keyframes slide {
+  0% {
+    margin-right: -300px;
+  }
+  5% {
+    margin-right: -200px;
+  }
+  33% {
+    margin-right: -200px;
+  }
+  38% {
+    margin-right: -100px;
+  }
+  66% {
+    margin-right: -100px;
+  }
+  71% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 0px;
   }
 }
 .home .content-pick .destination {
@@ -339,6 +402,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 70%;
+    width: 100%;
   }
 }

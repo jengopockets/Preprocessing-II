@@ -90,16 +90,42 @@
     justify-content: space-between;
     @media @mobile{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      width: 100%;
+    }
+    .slider{
+      @media @mobile{
+        height: 50px;
+        padding-left:15px;
+        overflow: hidden;
+        div{
+          color:#fff;
+          height: 50px;
+          margin-bottom: 50px;
+          padding: 2px 15px;
+          text-align: center;
+          box-sizing: border-box;
+          .slide1{
+            animation: slide 5s linear infinite;
+          }
+        }
+      }
+      @keyframes slide {
+        0% {margin-right:-300px;}
+        5% {margin-right:-200px;}
+        33% {margin-right:-200px;}
+        38% {margin-right:-100px;}
+        66% {margin-right:-100px;}
+        71% {margin-right:0px;}
+        100% {margin-right:0px;}
+      }
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       @media @mobile{
-        width:70%;
+        width:100%;
       }
     }
   }
