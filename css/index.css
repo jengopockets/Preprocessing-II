@@ -228,13 +228,6 @@ img {
 .navi a:hover {
   color: red;
 }
-@media (max-width: 500px) {
-  .navi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .btn {
   background-color: #17A2B8;
   color: white;
@@ -257,14 +250,7 @@ img {
 .home header {
   border-bottom: 2px dashed #C0C0C0;
   border-top: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  .home header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  padding-top: 1.5rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -276,35 +262,12 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width: 500px) {
-  .home .content-section .text-content {
-    width: 100%;
-  }
-}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width: 500px) {
-  .home .content-section .img-content {
-    width: 100%;
-  }
-}
 .home .content-section .img-content img {
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .home .content-section .img-content img {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .home .content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -318,29 +281,12 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width: 500px) {
-  .home .inverse-content {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 500px) {
-  .home .content-destination {
-    width: 100%;
-  }
-}
 .home .content-destination img {
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .home .content-destination img {
-    width: 100%;
-  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -348,6 +294,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .home .content-pick {
     display: flex;
@@ -396,12 +343,17 @@ img {
     margin-right: 0px;
   }
 }
+=======
+>>>>>>> parent of 62593a6... finished Mobile
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
   }
 }
+=======
+>>>>>>> parent of 62593a6... finished Mobile
