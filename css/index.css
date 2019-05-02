@@ -13,6 +13,29 @@
   padding: 1rem;
   border-radius: 12px;
 }
+@keyframes slide {
+  0% {
+    margin-left: -300%;
+  }
+  5% {
+    margin-left: -200%;
+  }
+  33% {
+    margin-left: -200%;
+  }
+  38% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -100%;
+  }
+  71% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -318,11 +341,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .slider {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 500px) {
-  .home .content-pick {
+  .home .content-pick .slider {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    overflow: hidden;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .slider .slide1 {
+    animation: slide 15s linear infinite;
   }
 }
 .home .content-pick .destination {
