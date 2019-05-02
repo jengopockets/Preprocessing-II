@@ -5,6 +5,14 @@
   padding-right: 2rem;
   padding-left: 2rem;
 }
+.button {
+  background-color: #17A2B8;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,6 +204,14 @@ img {
 }
 .navi a:hover {
   color: red;
+}
+.btn {
+  background-color: #17A2B8;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
 }
 .footer {
   width: 100%;
