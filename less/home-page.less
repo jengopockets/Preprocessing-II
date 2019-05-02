@@ -2,7 +2,12 @@
   header{
     border-bottom: 2px dashed @navigation-border;
     border-top: 2px dashed @navigation-border;
-    padding-top: 1.5rem;
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   .content-section {
@@ -16,15 +21,30 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width:100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width:100%;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile{
+          width:100%;
+        }
       }
+    }
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
     }
   }
 
@@ -41,14 +61,25 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width:100%;
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile{
+        width:100%;
+      }
     }
   }
 
@@ -57,51 +88,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     @media @mobile{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
+      width: 100%;
     }
-    .slider{
-      @media @mobile{
-        height: 50px;
-        padding-left:15px;
-        overflow: hidden;
-        div{
-          color:#fff;
-          height: 50px;
-          margin-bottom: 50px;
-          padding: 2px 15px;
-          text-align: center;
-          box-sizing: border-box;
-          .slide1{
-            animation: slide 5s linear infinite;
-          }
-        }
-      }
-      @keyframes slide {
-        0% {margin-right:-300px;}
-        5% {margin-right:-200px;}
-        33% {margin-right:-200px;}
-        38% {margin-right:-100px;}
-        66% {margin-right:-100px;}
-        71% {margin-right:0px;}
-        100% {margin-right:0px;}
-      }
-    }
-=======
->>>>>>> parent of 62593a6... finished Mobile
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-<<<<<<< HEAD
       @media @mobile{
-        width:100%;
+        width:70%;
       }
-=======
->>>>>>> parent of 62593a6... finished Mobile
     }
   }
-}// home
+}// 
