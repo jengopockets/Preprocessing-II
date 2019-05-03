@@ -1,1 +1,25 @@
 // Mixins in here
+.nav-bar {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: @font-color;
+    padding-right: 2rem;
+    padding-left: 2rem; 
+}
+.button{
+    background-color: @button-bg;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+@keyframes slide {
+    0% {margin-left:-300%;}
+    5% {margin-left:-200%;}
+    33% {margin-left:-200%;}
+    38% {margin-left:-100%;}
+    66% {margin-left:-100%;}
+    71% {margin-left:0px;}
+    100% {margin-left:0px;}
+  }
