@@ -214,6 +214,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .navi {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .navi nav {
   display: flex;
   align-items: space-between;
